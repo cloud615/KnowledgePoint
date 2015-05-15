@@ -1,0 +1,24 @@
+Microsoft Sql Server :function
+
+标量函数
+例子：
+create function [dbo].[truncDate](@argDateTime as datetime)
+returns datetime
+as
+begin
+	DECLARE @vResult datetime
+	select @vResult=cast(floor(cast(@argDateTime as float)) as datetime)
+	return @vResult
+end
+
+括号中为参数，returns 后标明返回值类型
+as是关键字
+begin 后为function主体
+end为结束标识
+
+
+在function内声明变量，需要使用大写DECLARE @变量名 类型  ，其中@不可少
+select语句中给变量赋值，要用 @变量名=字段或其他的单一值，区别于oracle 的into方式赋值
+
+
+还有表值函数、聚合函数

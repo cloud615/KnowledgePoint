@@ -1,0 +1,10 @@
+whileµÄÊ¹ÓÃ
+
+DECALRE @vA int
+set @vA=0
+
+while(@vA<=100)
+ begin
+  ....
+  set @vA=@vA+1
+ end

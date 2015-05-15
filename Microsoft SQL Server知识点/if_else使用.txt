@@ -1,0 +1,17 @@
+if ... else if ...else的使用
+
+DECALRE @vA int
+set @vA=2
+
+if(@vA=1)  --注意使用一个等号 表示相等
+  begin
+   ...
+  end
+else if(@vA=2)
+  begin
+   ...
+  end
+else
+  begin
+   ...
+  end
