@@ -1,0 +1,17 @@
+using System;  
+  
+static class Demo {  
+    static void Main(string[] args) {  
+    retry:  
+        for (var i = 0; ; i++) {  
+        redo:  
+            Console.WriteLine(i);  
+            Console.Write("Continue? (y/n/rd/rt) >");  
+            var opt = Console.ReadLine().ToLower();  
+            if ("y" == opt) continue;  
+            else if ("n" == opt) break;  
+            else if ("rt" == opt) goto retry;  
+            else if ("rd" == opt) goto redo;  
+        }  
+    }  
+}  
