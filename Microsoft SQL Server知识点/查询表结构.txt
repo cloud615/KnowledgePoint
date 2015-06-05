@@ -8,3 +8,11 @@
 sp_help ebauditstate
 --显示表的所有列的基本信息
 sp_columns ebauditstate
+
+
+1、查询所有表
+select [id], [name] from [sysobjects] where [type] = 'u' order by [name]
+2、查询所有数据库
+3、select [name] from [sysdatabases] order by [name]
+查询表中字段 
+select [name] from [syscolumns] where [name] = 'tableXXX'order by [colid]

@@ -1,0 +1,2 @@
+1、req中有cookies对象，可直接 点 出 已存储的key
+2、res中有cookie方法，可存储 key - value 键值对，（key,value,opts),opts是{} ，如maxAge：60000 

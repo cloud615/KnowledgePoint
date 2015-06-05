@@ -1,0 +1,2 @@
+进入网站根目录执行：
+SET DEBUG=sampleUpload:* & npm start
